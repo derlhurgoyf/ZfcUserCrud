@@ -1,12 +1,12 @@
 {
-    "name": "fabiopaiva/zfc-user-crud",
+    "name": "derlhurgoyf/zfc-user-crud",
     "description": "Crud interface for ZfcUser with Doctrine ORM.",
     "type": "library",
     "license": "MIT",
     "keywords": [
         "zf2"
     ],
-    "homepage": "https://github.com/fabiopaiva/ZfcUserCrud",
+    "homepage": "https://github.com/derlhurgoyf/ZfcUserCrud",
     "authors": [
         {
             "name": "Fábio Paiva",

@@ -5,7 +5,7 @@ Require [ZfcUserDoctrineOrm](https://github.com/ZF-Commons/ZfcUserDoctrineORM).
 
 ## Instalation
 
-	php composer.phar require fabiopaiva/zfc-user-crud:dev-master
+	php composer.phar require derlhurgoyf/zfc-user-crud:dev-master
 
 ## Usage
 
