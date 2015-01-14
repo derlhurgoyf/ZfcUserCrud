@@ -35,7 +35,7 @@ class Module implements AutoloaderProviderInterface {
 	    'factories' => array(
 		'zfcusercrud_options' => function ($sm) {
 		    $config = $sm->get('Config');
-		    return $config['zfcusercrud'];
+		    return array_merge($config['zfcuser'], $config['zfcusercrud']);
 		}
 	    )
 	);
