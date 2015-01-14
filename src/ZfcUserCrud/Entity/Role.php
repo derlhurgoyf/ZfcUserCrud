@@ -3,16 +3,16 @@
 namespace ZfcUserCrud\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Zend\Permissions\Acl\Role\RoleInterface;
+use BjyAuthorize\Acl\HierarchicalRoleInterface;
 
 /**
- - *
- - * @ORM\Entity
- - * @ORM\Table(name="role")
- - * @author Tom Oram <tom@scl.co.uk>
- - */
-class Role implements RoleInterface
-{
+  - *
+  - * @ORM\Entity
+  - * @ORM\Table(name="role")
+  - * @author Tom Oram <tom@scl.co.uk>
+  - */
+class Role implements HierarchicalRoleInterface {
+
     /**
      * @var int
      * @ORM\Id
@@ -38,9 +38,8 @@ class Role implements RoleInterface
      *
      * @return int
      */
-    public function getId()
-    {
-        return $this->id;
+    public function getId() {
+	return $this->id;
     }
 
     /**
@@ -50,9 +49,8 @@ class Role implements RoleInterface
      *
      * @return void
      */
-    public function setId($id)
-    {
-        $this->id = (int)$id;
+    public function setId($id) {
+	$this->id = (int) $id;
     }
 
     /**
@@ -60,9 +58,8 @@ class Role implements RoleInterface
      *
      * @return string
      */
-    public function getRoleId()
-    {
-        return $this->roleId;
+    public function getRoleId() {
+	return $this->roleId;
     }
 
     /**
@@ -72,9 +69,8 @@ class Role implements RoleInterface
      *
      * @return void
      */
-    public function setRoleId($roleId)
-    {
-        $this->roleId = (string) $roleId;
+    public function setRoleId($roleId) {
+	$this->roleId = (string) $roleId;
     }
 
     /**
@@ -82,9 +78,8 @@ class Role implements RoleInterface
      *
      * @return Role
      */
-    public function getParent()
-    {
-        return $this->parent;
+    public function getParent() {
+	return $this->parent;
     }
 
     /**
@@ -94,8 +89,8 @@ class Role implements RoleInterface
      *
      * @return void
      */
-    public function setParent(Role $parent)
-    {
-        $this->parent = $parent;
+    public function setParent(Role $parent) {
+	$this->parent = $parent;
     }
+
 }
